@@ -4,3 +4,7 @@ jobs:
   test_nodejs_template:
     requires: [~pr, ~commit, ~sd@987:publish_nodejs_template]
     template: nodejs/test@latest
+    steps:
+      - preinstall: |
+          echo $SD_TEMPLATE_FULLNAME
+          echo $SD_TEMPLATE_VERSION
