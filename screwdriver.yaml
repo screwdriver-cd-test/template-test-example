@@ -1,0 +1,6 @@
+shared:
+  image: node:8
+jobs:
+  test_node_template:
+    requires: [~pr, ~commit]
+    template: nodejs/test@latest

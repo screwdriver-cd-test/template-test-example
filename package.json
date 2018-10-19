@@ -1,0 +1,30 @@
+{
+  "name": "template-test-example",
+  "version": "0.0.1",
+  "description": "Template test example Screwdriver CD service",
+  "main": "index.js",
+  "scripts": {
+    "test": "jenkins-mocha --recursive --timeout 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:screwdriver-cd-test/template-test-example.git"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "bugs": "https://github.com/screwdriver-cd/screwdriver/issues",
+  "keywords": [
+    "screwdriver",
+    "yahoo",
+    "continuous delivery",
+    "continuous integration"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "Tiffany Kyi <tiffanykyi@gmail.com>",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "~3.5.0",
+    "jenkins-mocha": "^4.0.0"
+  }
+}
