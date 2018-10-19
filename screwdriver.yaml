@@ -2,5 +2,5 @@ shared:
   image: node:8
 jobs:
   test_nodejs_template:
-    requires: [~sd@987:publish_nodejs_template]
+    requires: [~pr, ~commit, ~sd@987:publish_nodejs_template]
     template: nodejs/test@latest
